@@ -1,1 +1,0 @@
-# VeganFinder-beta
