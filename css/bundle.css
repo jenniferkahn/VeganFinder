@@ -1,0 +1,249 @@
+.Popup {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+  .Popup .popup-content {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    padding: 66px;
+    background-color: #ffffff;
+    box-shadow: 0 0 23px rgba(0, 0, 0, 0.06); }
+    .Popup .popup-content .popup--close {
+      position: absolute;
+      right: 20px;
+      top: 22px;
+      width: 42px;
+      height: 42px; }
+      .Popup .popup-content .popup--close img {
+        width: 100%; }
+
+.IndexLayout .launch-popup {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%; }
+  .IndexLayout .launch-popup h1 {
+    font-size: 2.2em;
+    font-weight: normal;
+    color: #5AD282;
+    margin: 0; }
+  .IndexLayout .launch-popup form {
+    width: 100%;
+    position: relative; }
+    .IndexLayout .launch-popup form input {
+      width: 100%;
+      border: 1px solid #5AD282;
+      font-size: 1.5em;
+      padding: 10px 20px; }
+      .IndexLayout .launch-popup form input::placeholder {
+        color: #5AD282; }
+    .IndexLayout .launch-popup form button {
+      position: absolute;
+      right: 20px;
+      top: 13px;
+      width: 25px;
+      height: 23px;
+      padding: 0;
+      border: none;
+      background: none; }
+  .IndexLayout .launch-popup p {
+    font-size: 1em;
+    font-weight: lighter;
+    margin: 0; }
+  .IndexLayout .launch-popup .color-red {
+    color: #db5a63; }
+  .IndexLayout .launch-popup .color-green {
+    color: #5AD282; }
+
+.IndexLayout .landing {
+  width: 100%;
+  height: 100vh;
+  min-height: 450px;
+  display: flex;
+  background: #fff url("../img/background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-items: center; }
+
+.IndexLayout .landing .landing__content {
+  padding: 0 8%;
+  text-align: center;
+  width: 100%; }
+
+@media screen and (min-width: 48em) {
+  .IndexLayout .landing .landing__content {
+    text-align: left;
+    width: 60%; } }
+
+.IndexLayout .landing .landing__content h1 {
+  font-size: 26px;
+  color: #9B9B9B;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+  letter-spacing: 2px; }
+
+.IndexLayout .landing .landing__content h1 .highlight {
+  color: #5AD385; }
+
+@media screen and (min-width: 48em) {
+  .IndexLayout .landing .landing__content h1 {
+    font-size: 2.6em;
+    line-height: 65px; } }
+
+.IndexLayout .landing .landing__content p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #5AD385;
+  margin: 30px 0; }
+
+@media screen and (min-width: 48em) {
+  .IndexLayout .landing .landing__content p {
+    margin: 25px 0;
+    font-size: 1.5em; } }
+
+.IndexLayout .landing__content .content__store {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.IndexLayout .landing__content .content__store li {
+  display: inline-block;
+  margin: 10px; }
+
+.IndexLayout .landing__content .content__store a {
+  text-decoration: none; }
+
+.IndexLayout .landing__content .content__store a img {
+  width: 144px; }
+
+@media screen and (min-width: 48em) {
+  .IndexLayout .landing__content .content__store li {
+    margin: 25px 25px 0 0;
+    width: 40%; }
+  .IndexLayout .landing__content .content__store a img {
+    width: 100%; } }
+
+.IndexLayout .landing__image {
+  display: none;
+  width: 25%; }
+
+@media screen and (min-width: 48em) {
+  .IndexLayout .landing__image {
+    display: block; } }
+
+.IndexLayout .landing__header {
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+.IndexLayout .landing__header .header__logo {
+  position: absolute;
+  top: 25px;
+  left: 25px; }
+
+.IndexLayout .landing__header .header__logo img {
+  height: 25px; }
+
+@media screen and (min-width: 48em) {
+  .IndexLayout .landing__header .header__logo {
+    top: 50px;
+    left: 50px; }
+  .IndexLayout .landing__header .header__logo img {
+    height: 40px; } }
+
+.IndexLayout .landing__header .header__social {
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.IndexLayout .landing__header .header__social .social img {
+  width: 25px; }
+
+@media screen and (min-width: 48em) {
+  .IndexLayout .landing__header .header__social {
+    top: 50px;
+    right: 50px; }
+  .IndexLayout .landing__header .header__social .social img {
+    width: 45px; } }
+
+.IndexLayout .landing__header .header__social li {
+  display: inline-block;
+  padding: 0 10px; }
+
+.IndexLayout .landing__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  padding: 10px 0;
+  color: #5AD385; }
+
+.IndexLayout .landing__footer .footer__nav {
+  list-style: none;
+  margin: 0 0 10px 0;
+  padding: 0; }
+
+.IndexLayout .landing__footer .footer__nav li {
+  display: inline-block; }
+
+.IndexLayout .landing__footer .footer__nav li:nth-of-type(1) {
+  border-right: 1px solid #5AD385; }
+
+.IndexLayout .landing__footer .footer__nav a {
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: color .3s ease;
+  font-size: 12px; }
+
+.IndexLayout .landing__footer .footer__nav a:hover {
+  color: #87F0AC; }
+
+.IndexLayout .landing__footer .footer__legal {
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 400; }
+
+.PrivacyLayout {
+  font-family: Roboto, sans-serif;
+  max-width: 960px;
+  padding: 45px 30px;
+  margin: 0 auto;
+  color: #9B9B9B; }
+  .PrivacyLayout h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    line-height: 40px;
+    text-align: center; }
+  .PrivacyLayout p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 24px;
+    white-space: pre-wrap; }
+  .PrivacyLayout h2 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 40px; }
+  .PrivacyLayout h3 {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 30px; }
+  .PrivacyLayout ul {
+    font-size: 14px;
+    line-height: 24px; }
